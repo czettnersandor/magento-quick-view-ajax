@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+      <Czettner_Ajax>
+          <active>true</active>
+          <codePool>local</codePool>
+      </Czettner_Ajax>
+  </modules>
+</config>

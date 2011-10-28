@@ -1,0 +1,32 @@
+<?php
+$_product = $this->getProduct();
+?>
+
+<div class="product-essential">
+    <div class="product-img-box">
+        <a href="<?php echo $_product->getProductUrl(); ?>">
+            <img src="<?php echo Mage::helper('catalog/image')->init($_product, 'image')->resize(230, 230); ?>"/>
+        </a>
+    </div>
+
+    <div class="product-shop">
+        <h3 class="product-name"><?php echo $_product->getName(); ?></h3>
+
+        <h4><?php echo $this->__('Quick Overview') ?></h4>
+        <div class='short-description'><?php echo $_product->getShortDescription(); ?></div>
+
+        <div class='divider'></div>
+
+        <div class="col2-set">
+            <div class="col-1">
+                <?php echo $this->getPriceHtml($_product); ?>
+            </div>
+            <div class="col-2">
+                <?php if ($_product->isSaleable()): ?>
+                    <button class="button" onclick="setLocation('<?php echo Mage::helper('checkout/cart')->getAddUrl($_product); ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
