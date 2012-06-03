@@ -16,13 +16,22 @@
     
     <frontend>
         <routers>
-            <Czettner_Ajax>
+            <ajax>
                 <use>standard</use>
                 <args>
                     <module>Czettner_Ajax</module>
                     <frontName>ajax</frontName>
                 </args>
-            </Czettner_Ajax>
+            </ajax>
         </routers>
+        <layout>
+            <updates>
+                <ajax>
+                    <file>czettner_ajax.xml</file>
+                </ajax>
+            </updates>
+        </layout>
     </frontend>
+
+
 </config>

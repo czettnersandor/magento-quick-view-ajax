@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addItem"><type>skin_js</type><name>js/productInfo.js</name></action>
+            <action method="addCss"><stylesheet>css/czettner_ajax.css</stylesheet></action>
+        </reference>
+    </default>
+
+<!--
+Category default layout
+-->
+
+    <catalog_category_default>
+        <reference name="product_list">
+            <action method="setTemplate"><template>czettner_ajax/list.phtml</template></action>
+        </reference>
+    </catalog_category_default>
+
+<!--
+Category layered navigation layout
+-->
+
+    <catalog_category_layered>
+        <reference name="product_list">
+            <action method="setTemplate"><template>czettner_ajax/list.phtml</template></action>
+        </reference>
+    </catalog_category_layered>
+</layout>

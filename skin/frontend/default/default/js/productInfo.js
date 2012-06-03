@@ -23,7 +23,7 @@ ProductInfo.prototype = {
     createLoader: function()
     {
         var loader = new Element('div', {id: 'ajax-preloader'});
-        loader.innerHTML = "<p class='loading'><img src="+this.settings.loader+" /><br/>"+this.settings.loadingMessage+"</p>";
+        loader.innerHTML = "<p class='loading'>"+this.settings.loadingMessage+"</p>";
         document.body.appendChild(loader);
         $('ajax-preloader').setStyle({
             position: 'absolute',
@@ -107,3 +107,8 @@ ProductInfo.prototype = {
         }); 
     }
 }
+
+Event.observe(window, 'load', function() {
+    new ProductInfo('.ajax', '.product-image', {
+    });
+});
