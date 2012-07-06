@@ -10,3 +10,6 @@ Installation instructions
 
 * Copy the content of the repo to the Magento installation folder
 * Modify your list.phtml image section or use czettner_ajax/list.phtml (already configured, see czettner_ajax.xml)
+* Hide the button from your CSS (thanks lawrencetaur):
+  .product-image .ajax{ display:none;}
+  .product-image .ajax:hover{ display:block;}
