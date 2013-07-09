@@ -5,8 +5,8 @@ Magento Quick View Ajax Loader
 
 Compatible with Magento 1.4, 1.4.1.1, 1.5, 1.6, 1.7
 
-<a href="http://sandor.czettner.hu/sites/default/files/Goods.png"><img src="http://sandor.czettner.hu/sites/default/files/imagecache/left_sidebar/Goods.png" alt="" title="" width="200" height="180"></a>
-<a href="http://sandor.czettner.hu/sites/default/files/Goods2.png"><img src="http://sandor.czettner.hu/sites/default/files/imagecache/left_sidebar/Goods2.png" alt="" title="" width="200" height="180"></a>
+<a href="http://www.czettner.com/sites/default/files/sites/default/files/Goods.png"><img src="http://www.czettner.com/sites/default/files/sites/default/files/Goods.png" alt="" title="" width="200" height="180"></a>
+<a href="http://www.czettner.com/sites/default/files/sites/default/files/Goods2.png"><img src="http://www.czettner.com/sites/default/files/sites/default/files/Goods2.png" alt="" title="" width="200" height="180"></a>
 
 Installation instructions
 =========================
